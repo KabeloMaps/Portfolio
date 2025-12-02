@@ -3,8 +3,6 @@
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import HeroSection from "./components/HeroSection";
-import FeatureSection from "./components/FeatureSection";
 
 const navigation = [
   { name: "Work", href: "#" },
@@ -12,7 +10,7 @@ const navigation = [
   { name: "Contact", href: "#" },
 ];
 
-export default function App() {
+export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -119,8 +117,6 @@ export default function App() {
           />
         </div>
       </div>
-      <HeroSection />
-      <FeatureSection />
     </div>
   );
 }
