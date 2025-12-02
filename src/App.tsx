@@ -91,7 +91,6 @@ export default function App() {
           </DialogPanel>
         </Dialog>
       </header>
-
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           aria-hidden="true"
@@ -120,6 +119,7 @@ export default function App() {
         </div>
       </div>
       <HeroSection />
+
       <FeatureSection />
     </div>
   );

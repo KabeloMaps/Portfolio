@@ -2,6 +2,7 @@ import { Button } from "@headlessui/react";
 import { FaLinkedin } from "react-icons/fa";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import TextType from "./TextType";
 
 export default function HeroSection() {
   return (
@@ -41,12 +42,19 @@ export default function HeroSection() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className=" lg:max-w-lg">
-              <h1 className="mt-64 text-9xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+              <h1 className="mt-64 mb-10 text-9xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
                 HI, I'M KABELO MAPONYA
               </h1>
-              <p className="mt-6text-xl/8 text-white">
-                A Johannessburg and Cape Town based software developer
-                passionate about building accessible and user friendly websites
+              <p className="mt-6text-xl/8 text-[1.25rem] text-white">
+                <TextType
+                  text={[
+                    "A Johannessburg and Cape Town based software developer passionate about building accessible and user friendly websites ",
+                  ]}
+                  typingSpeed={75}
+                  pauseDuration={500}
+                  showCursor={true}
+                  cursorCharacter="|"
+                />
               </p>
               <div className="flex flex-row items-center gap-10 mt-9 ">
                 <Button

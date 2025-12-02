@@ -14,7 +14,6 @@ export default function FeatureSection() {
           </p>
         </div>
       </div>
-
       <div className="feature-container grid grid-cols-2  gap-28 text-white">
         <div className="image-container py-36 px-36 my-5 bg-neutral-600 rounded-3xl ">
           <div className="hover-3d">
@@ -24,14 +23,16 @@ export default function FeatureSection() {
                 src="/public/assets/projects/E-commerce-Preview.jpg"
                 alt="3D card"
               />
-              <img src="/public/assets/E-commerce/active-states-basket-empty.jpg" />
-              <img src="/public/assets/E-commerce/active-states-basket-filled.jpg" />
-              <img src="/public/assets/E-commerce/active-states-lightbox.jpg" />
-              <img src="/public/assets/E-commerce/desktop-design-lightbox.jpg" />
+
+              <img src="/assets/E-commerce/active-states-basket-empty.jpg" />
+              <img src="/assets/E-commerce/active-states-basket-filled.jpg" />
+              <img src="/assets/E-commerce/active-states-lightbox.jpg" />
+              <img src="/assets/E-commerce/desktop-design-lightbox.jpg" />
             </figure>
 
             {/* 8 empty divs needed for the 3D effect */}
             <div></div>
+
             <div></div>
             <div></div>
             <div></div>
@@ -43,9 +44,7 @@ export default function FeatureSection() {
         </div>
         <div className="description-container content-center ">
           <article>
-            <h2 className="font-family-third font-normal text-[1.7rem] pb-3">
-              Lead Generation Landing Page
-            </h2>
+            <h2 className="font-family-third font-normal text-[1.7rem] pb-3"></h2>
             <p
               className="font-family-third text-[1rem] font-light
             "
