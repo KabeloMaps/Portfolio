@@ -19,12 +19,17 @@ export default function FeatureSection() {
         <div className="image-container py-36 px-36 my-5 bg-neutral-600 rounded-3xl ">
           <div className="hover-3d">
             {/* content */}
-            <figure className="max-w-100 rounded-2xl">
+            <figure className="max-w-100 hover-gallery rounded-2xl">
               <img
                 src="/public/assets/projects/E-commerce-Preview.jpg"
                 alt="3D card"
               />
+              <img src="/public/assets/E-commerce/active-states-basket-empty.jpg" />
+              <img src="/public/assets/E-commerce/active-states-basket-filled.jpg" />
+              <img src="/public/assets/E-commerce/active-states-lightbox.jpg" />
+              <img src="/public/assets/E-commerce/desktop-design-lightbox.jpg" />
             </figure>
+
             {/* 8 empty divs needed for the 3D effect */}
             <div></div>
             <div></div>
