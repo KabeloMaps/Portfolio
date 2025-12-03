@@ -1,3 +1,5 @@
+import { Button } from "@headlessui/react";
+
 export default function FeatureSection() {
   return (
     <div className="bg-black justify-center py-24  sm:py-32">
@@ -18,21 +20,15 @@ export default function FeatureSection() {
         <div className="image-container py-36 px-36 my-5 bg-neutral-600 object-fit object-fit-cover rounded-3xl ">
           <div className="hover-3d">
             {/* content */}
-            <figure className="max-w-100 hover-gallery rounded-2xl">
+            <figure className="max-w-100 rounded-2xl">
               <img
                 src="/public/assets/projects/E-commerce-Preview.jpg"
                 alt="3D card"
-              />
-              <img src="/assets/E-commerce/active-states-basket-empty.jpg" />
-              <img
-                src="/public/assets/E-commerce/Screenshot 2025-12-03 at 12.40.59.jpg"
-                className="object-fit"
               />
             </figure>
 
             {/* 8 empty divs needed for the 3D effect */}
             <div></div>
-
             <div></div>
             <div></div>
             <div></div>
@@ -82,15 +78,16 @@ export default function FeatureSection() {
             </div>
             <hr />
 
-            <div>
+            <div className="flex content-around justify-start  ">
               <button
-                type="button"
+                className=" bg-[hsl(240,100%,50%)] my-7 ml-0 py-3.5 px-11 rounded-[10rem] "
                 data-link="https://kumkani-finance-demo2.netlify.app"
               >
                 LIVE DEMO
               </button>
+
               <button
-                type="button"
+                className="bg-[hsl(240,100%,50%)] my-7 ml-8  py-3.5 px-11 rounded-[10rem] "
                 data-link="https://github.com/KabeloMaps/Kumkani-Finance?tab=readme-ov-file"
               >
                 SEE ON GITHUB
