@@ -48,7 +48,7 @@ export default function HeroSection() {
               <p className="mt-6text-xl/8 text-[1.25rem] text-white">
                 <TextType
                   text={[
-                    "A Johannessburg and Cape Town based software developer passionate about building accessible and user friendly websites ",
+                    "A Johannessburggit  based software developer passionate about building accessible and user friendly websites ",
                   ]}
                   typingSpeed={75}
                   pauseDuration={500}

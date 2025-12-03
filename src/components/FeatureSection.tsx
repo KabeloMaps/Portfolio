@@ -15,7 +15,7 @@ export default function FeatureSection() {
         </div>
       </div>
       <div className="feature-container grid grid-cols-2  gap-28 text-white">
-        <div className="image-container py-36 px-36 my-5 bg-neutral-600 rounded-3xl ">
+        <div className="image-container py-36 px-36 my-5 bg-neutral-600 object-fit object-fit-cover rounded-3xl ">
           <div className="hover-3d">
             {/* content */}
             <figure className="max-w-100 hover-gallery rounded-2xl">
@@ -23,8 +23,11 @@ export default function FeatureSection() {
                 src="/public/assets/projects/E-commerce-Preview.jpg"
                 alt="3D card"
               />
-
               <img src="/assets/E-commerce/active-states-basket-empty.jpg" />
+              <img
+                src="/public/assets/E-commerce/Screenshot 2025-12-03 at 12.40.59.jpg"
+                className="object-fit"
+              />
               <img src="/assets/E-commerce/active-states-basket-filled.jpg" />
               <img src="/assets/E-commerce/active-states-lightbox.jpg" />
               <img src="/assets/E-commerce/desktop-design-lightbox.jpg" />
