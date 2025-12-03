@@ -28,9 +28,6 @@ export default function FeatureSection() {
                 src="/public/assets/E-commerce/Screenshot 2025-12-03 at 12.40.59.jpg"
                 className="object-fit"
               />
-              <img src="/assets/E-commerce/active-states-basket-filled.jpg" />
-              <img src="/assets/E-commerce/active-states-lightbox.jpg" />
-              <img src="/assets/E-commerce/desktop-design-lightbox.jpg" />
             </figure>
 
             {/* 8 empty divs needed for the 3D effect */}
