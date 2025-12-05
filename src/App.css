@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&display=swap");
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -116,4 +118,20 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+@layer base {
+  .font-primary {
+    font-family: "Epilogue", sans-serif;
+  }
+  .font-secondary {
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .font-third {
+    font-family: "Manrope", sans-serif;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
 }
