@@ -26,6 +26,8 @@ export default function FeatureSection() {
 
   return (
     <div className="bg-black text-white py-24 sm:py-32">
+      <hr className="border-t-2 border-neutral-800 my-20" />
+
       {/* Project Cards Grid */}
       <div className="title-contianer max-w-7xl cursor-default  px-6 lg:px-8">
         <div className="max-w-2xl flex justify-items-start flex-row lg:text-center flex-wrap mx-0">

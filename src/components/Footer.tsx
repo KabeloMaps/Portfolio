@@ -1,47 +1,50 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+
 const Footer = () => {
   return (
     <div>
-      <footer className="contact bg-blue-500">
-        <div className="footer-description">
-          <h3 className="Lets-connect">Let's Connet</h3>
-          <p>
-            say hello at{" "}
-            <span className="colored-line">khmaponya@gmail.com</span>
-          </p>
-          <p>
-            for more information, please take a look at my
-            <a
-              href="./assets/resume/Front-End Development CV.pdf"
-              download
-              className="colored-line"
-            >
-              resume
-            </a>
-          </p>
-          <div className="social-icons-footer">
-            <span id="linkedin">
-              <a
-                href="https://www.linkedin.com/in/kabelomaponya/"
-                target="_blank"
-                rel="noopener"
-              >
-                <i className="fab fa-linkedin"></i>
-              </a>
-            </span>
-            <span id="github">
-              <a
-                href="https://github.com/KabeloMaps?tab=repositories"
-                target="_blank"
-                rel="noopener"
-              >
-                <i className="fab fa-github"></i>{" "}
-              </a>
-            </span>
-            <p className="copyright">&copy; 2025 Kabelo Maponya</p>
-          </div>
-        </div>
+      <footer className="  ">
+        <div className="footer-description flex flex-col pt-28">
+          <hr className="border-t-2 border-neutral-800 my-20" />
 
-        <div className="footer-form"></div>
+          <h3 className="text-white text-[2.5rem] font-bold font-family-third ">
+            Let's Connet
+          </h3>
+          <p className="text-white text-[1rem] font-family-third font-light">
+            say hello at{" "}
+            <span className="decoration-[#d3e97a] underline underline-offset-4 cursor-pointer ">
+              khmaponya@gmail.com
+            </span>
+          </p>
+          <p className="text-white text-[1rem] font-family-third font-light">
+            for more information, please take a look at my{" "}
+            <span className="underline decoration-[#d3e97a] underline-offset-4 cursor-pointer">
+              {" "}
+              resume
+            </span>
+          </p>
+          <div className="  text-white text-2xl  mb-5">
+            <a
+              href="https://www.linkedin.com/in/kabelomaponya/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} className="text-8xl  " />
+            </a>
+
+            <a
+              href="https://github.com/KabeloMaps?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} className="text-8xl " />
+            </a>
+          </div>
+          <p className="copyright text-white pt-24">
+            &copy; 2025 Kabelo Maponya
+          </p>
+        </div>
       </footer>
     </div>
   );
