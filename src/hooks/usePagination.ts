@@ -1,60 +1,37 @@
-import { useMemo, useState } from "react";
+import { useState, useMemo } from "react";
 
-type usePaginationProps<T> = {
-  itemsPerPage: number;
-  totalItems: T[];
-};
-
-//functoin to assist in calculating total number of pages
-function usePagination() {
-  // Step 1: Manage the current page state
+export default function usePagination<T>(items: T[], itemsPerPage: number) {
   const [currentPage, setCurrentPage] = useState(1);
-  const [totalItems, setTotalItems] = useState(10);
-  const [itemsPerPage, setItemsPerPage] = useState(4);
 
-  // Step 2: Calculate the total number of pages
   const totalPages = useMemo(
-    () => Math.ceil(totalItems / itemsPerPage),
-    [totalItems, itemsPerPage]
+    () => Math.ceil(items.length / itemsPerPage),
+    [items, itemsPerPage]
   );
 
-  // Step 3: Create a function to handle the page change
+  const currentItems = useMemo(() => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    return items.slice(startIndex, endIndex);
+  }, [items, currentPage, itemsPerPage]);
+
+  const nextPage = () => {
+    setCurrentPage((p) => Math.min(p + 1, totalPages));
+  };
+
+  const prevPage = () => {
+    setCurrentPage((p) => Math.max(p - 1, 1));
+  };
+
   const goToPage = (page: number) => {
-    if (page < 1) {
-      setCurrentPage(1); // Can't go below page 1
-    } else if (page > totalPages) {
-      setCurrentPage(totalPages); // Can't go above total pages
-    } else {
-      setCurrentPage(page); // Set the new page
-    }
+    setCurrentPage(Math.min(Math.max(page, 1), totalPages));
   };
-
-  // Step 4: Create functions for "Next" and "Previous" buttons
-  const goToNextPage = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
-    }
-  };
-
-  const goToPreviousPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
-  };
-
-  // Step 5: Calculate the items to be displayed on the current page
-
-  const startIndex = currentPage * itemsPerPage;
-  const lastIndex = startIndex + itemsPerPage;
-  const currentItems = totalItems.slice(startIndex, lastIndex);
 
   return {
+    currentItems,
     currentPage,
     totalPages,
+    nextPage,
+    prevPage,
     goToPage,
-    goToNextPage,
-    goToPreviousPage,
   };
 }
-
-export default usePagination;

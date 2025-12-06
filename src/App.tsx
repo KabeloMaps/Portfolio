@@ -130,23 +130,7 @@ export default function App() {
       </div>
       <HeroSection />
       <FeatureSection />
-      <Pagination className=" bg-red-500" aria-label="Pagination navigation">
-        <PaginationContent className="flex bg-blue-500 gap-4">
-          <PaginationItem>
-            <PaginationPrevious href="#" />
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink href="#">1</PaginationLink>
-            <PaginationLink href="#">2</PaginationLink>
-            <PaginationLink href="#">3</PaginationLink>
-            <PaginationLink href="#">4</PaginationLink>
-          </PaginationItem>
 
-          <PaginationItem>
-            <PaginationNext href="#" />
-          </PaginationItem>
-        </PaginationContent>
-      </Pagination>{" "}
       <About />
     </div>
   );
