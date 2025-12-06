@@ -41,14 +41,14 @@ export default function FeatureSection() {
         </div>
       </div>
 
-      <div className="flex flex-col  mx-6 lg:mx-8">
+      <div className="  mx-6 lg:mx-8">
         <div className="feature-container gap-28">
           {currentItems.map((proj) => (
             <ProjectCard key={proj.id} project={proj} />
           ))}
         </div>
 
-        <div className="pagination-container flex justify-center ">
+        <div className="pagination-container flex justify-center">
           <div className="mt-12 ">
             <Pagination aria-label="Pagination navigation">
               <PaginationContent>
