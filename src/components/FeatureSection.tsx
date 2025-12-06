@@ -27,39 +27,67 @@ export default function FeatureSection() {
   return (
     <div className="bg-black text-white py-24 sm:py-32">
       {/* Project Cards Grid */}
-      <div className="feature-container grid grid-cols-2 gap-28">
-        {currentItems.map((proj) => (
-          <ProjectCard key={proj.id} project={proj} />
-        ))}
+      <div className="title-contianer max-w-7xl cursor-default  px-6 lg:px-8">
+        <div className="max-w-2xl flex justify-items-start flex-row lg:text-center flex-wrap mx-0">
+          <h2 className="text-[3.4rem] font-family-primary text-white font-bold">
+            FEATURED PROJECTS
+          </h2>
+
+          <p className="mt-6 mb-16 flex  text-left font-family-third font-normal text-lg inset-0 text-white">
+            Here are some of the selected projects that showcase my passion for
+            <br />
+            front-end development.
+          </p>
+        </div>
       </div>
 
-      {/* Pagination */}
-      <div className="flex justify-center mt-12 ">
-        <Pagination aria-label="Pagination navigation ">
-          <PaginationContent>
-            <PaginationItem>
-              <PaginationPrevious onClick={prevPage} />
-            </PaginationItem>
+      <div className="flex flex-col  mx-6 lg:mx-8">
+        <div className="feature-container gap-28">
+          {currentItems.map((proj) => (
+            <ProjectCard key={proj.id} project={proj} />
+          ))}
+        </div>
 
-            {[...Array(totalPages)].map((_, i) => {
-              const page = i + 1;
-              return (
-                <PaginationItem key={i}>
-                  <PaginationLink
-                    isActive={currentPage === page}
-                    onClick={() => goToPage(page)}
-                  >
-                    {page}
-                  </PaginationLink>
+        <div className="pagination-container flex justify-center ">
+          <div className="mt-12 ">
+            <Pagination aria-label="Pagination navigation">
+              <PaginationContent>
+                <PaginationItem>
+                  <PaginationPrevious
+                    onClick={prevPage}
+                    className="cursor-pointer"
+                  />
                 </PaginationItem>
-              );
-            })}
 
-            <PaginationItem>
-              <PaginationNext onClick={nextPage} />
-            </PaginationItem>
-          </PaginationContent>
-        </Pagination>
+                {[...Array(totalPages)].map((_, i) => {
+                  const page = i + 1;
+                  return (
+                    <PaginationItem key={i}>
+                      <PaginationLink
+                        isActive={currentPage === page}
+                        onClick={() => goToPage(page)}
+                        className={
+                          currentPage === page
+                            ? "bg-black text-white cursor-pointer"
+                            : "bg-transparent text-gray-300 cursor-pointer"
+                        }
+                      >
+                        {page}
+                      </PaginationLink>
+                    </PaginationItem>
+                  );
+                })}
+
+                <PaginationItem>
+                  <PaginationNext
+                    onClick={nextPage}
+                    className="cursor-pointer"
+                  />
+                </PaginationItem>
+              </PaginationContent>
+            </Pagination>
+          </div>
+        </div>
       </div>
     </div>
   );
