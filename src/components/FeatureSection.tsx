@@ -34,7 +34,7 @@ export default function FeatureSection() {
       </div>
 
       {/* Pagination */}
-      <div className="flex justify-center mt-12 bg-amber-600">
+      <div className="flex justify-center mt-12 ">
         <Pagination aria-label="Pagination navigation ">
           <PaginationContent>
             <PaginationItem>

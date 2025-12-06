@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="text-white bg-cyan-700  grid grid-cols-2">
+    <div className="text-white grid grid-cols-2">
       <div className="">
         <h3 className="text-[4.5rem] font-family-primary">ABOUT ME</h3>
       </div>
