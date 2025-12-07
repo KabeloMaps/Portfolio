@@ -1,5 +1,5 @@
 import { Button } from "@headlessui/react";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import TextType from "./TextType";
@@ -91,7 +91,7 @@ export default function HeroSection() {
                   rel="noopener noreferrer"
                   className="bg-white "
                 >
-                  <FaLinkedin size={40} />
+                  <FaGithub size={40} />
                 </a>
               </div>
             </div>
