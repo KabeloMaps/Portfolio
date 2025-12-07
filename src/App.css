@@ -8,6 +8,8 @@
 @plugin "daisyui";
 
 @theme {
+  --auxilary-color: hsl(72, 72%, 70%);
+
   --font-family-primary: "Epilogue", sans-serif;
   --font-family-secondary: "Bebas Neue", sans-serif;
   --font-family-third: "Manrope", sans-serif;
@@ -52,6 +54,8 @@
 }
 
 :root {
+  --auxilary-color: hsl(72, 72%, 70%);
+
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

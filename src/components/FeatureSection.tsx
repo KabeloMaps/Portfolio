@@ -26,6 +26,8 @@ export default function FeatureSection() {
 
   return (
     <div className="bg-black text-white py-24 sm:py-32">
+      <hr className="border-t-2 border-neutral-800 my-20" />
+
       {/* Project Cards Grid */}
       <div className="title-contianer max-w-7xl cursor-default  px-6 lg:px-8">
         <div className="max-w-2xl flex justify-items-start flex-row lg:text-center flex-wrap mx-0">
@@ -41,14 +43,14 @@ export default function FeatureSection() {
         </div>
       </div>
 
-      <div className="flex flex-col  mx-6 lg:mx-8">
+      <div className="  mx-6 lg:mx-8">
         <div className="feature-container gap-28">
           {currentItems.map((proj) => (
             <ProjectCard key={proj.id} project={proj} />
           ))}
         </div>
 
-        <div className="pagination-container flex justify-center ">
+        <div className="pagination-container flex justify-center">
           <div className="mt-12 ">
             <Pagination aria-label="Pagination navigation">
               <PaginationContent>
