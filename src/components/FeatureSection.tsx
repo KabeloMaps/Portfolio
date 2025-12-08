@@ -25,11 +25,11 @@ export default function FeatureSection() {
   } = usePagination(projects, 4);
 
   return (
-    <div className="bg-black text-white py-24 sm:py-32">
-      <hr className="border-t-2 border-neutral-800 my-20" />
+    <div className="bg-red-600 text-white py-24 sm:py-32">
+      <hr className="border-t-2 border-neutral-800 " />
 
       {/* Project Cards Grid */}
-      <div className="title-contianer max-w-7xl cursor-default  px-6 lg:px-8">
+      <div className="title-contianer cursor-default bg-blue-800 px-6 lg:px-8">
         <div className="max-w-2xl flex justify-items-start flex-row lg:text-center flex-wrap mx-0">
           <h2 className="text-[3.4rem] font-family-primary text-white font-bold">
             FEATURED PROJECTS
