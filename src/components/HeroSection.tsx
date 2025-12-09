@@ -1,12 +1,13 @@
 import { Button } from "@headlessui/react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import TextType from "./TextType";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function HeroSection() {
   return (
-    <div className="relative  isolate overflow-hidden p-48 bg-black-400 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div className=" relative  isolate overflow-hidden p-48 bg-black-400 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10  overflow-hidden">
         <svg
           aria-hidden="true"
@@ -38,11 +39,11 @@ export default function HeroSection() {
           />
         </svg>
       </div>
-      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+      <div className="mx-auto grid  max-w-2xl grid-cols-1 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+        <div className="lg:col-span-2  lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className=" lg:max-w-lg">
-              <h1 className="mt-64 mb-10 text-9xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+              <h1 className="mt-20 mb-10 text-9xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
                 HI, I'M KABELO MAPONYA
               </h1>
               <p className="mt-6text-xl/8 text-[1.25rem] text-white">
@@ -56,12 +57,12 @@ export default function HeroSection() {
                   cursorCharacter="|"
                 />
               </p>
-              <div className="flex flex-row items-center gap-10 mt-9 ">
+              <div className=" flex items-center mt-10">
                 <Button
-                  className="mt-6 flex px-5 items-center rounded-4xl bg-pretty py-4 text-base font-semibold shadow-sm bg- hover:bg-indigo-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-indigo-600 "
+                  className="flex px-5 items-center rounded-4xl bg-pretty py-4 text-base font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   style={{ backgroundColor: "rgb(211, 233, 122)" }}
                 >
-                  <span className="text-black ">CONTACT ME</span>{" "}
+                  <span className="text-black">CONTACT ME</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -77,32 +78,45 @@ export default function HeroSection() {
                     />
                   </svg>
                 </Button>
-                <a
-                  href="https://www.linkedin.com/in/kabelomaponya/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white "
-                >
-                  <FaLinkedin size={40} />
-                </a>{" "}
-                <a
-                  href="https://github.com/KabeloMaps?tab=repositories"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white "
-                >
-                  <FaGithub size={40} />
-                </a>
+
+                <div className="ml-auto  flex text-white gap-6">
+                  <a
+                    href="https://www.linkedin.com/in/kabelomaponya/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      className="text-[3.25rem]"
+                    />
+                  </a>
+
+                  <a
+                    href="https://github.com/KabeloMaps?tab=repositories"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      className="text-[3.25rem]"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="-mt-12  -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-          <img
-            alt="hero img"
-            src="./assets/hero/Hero.png"
-            className="w-3xl max-w-none rounded-4xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-228"
-          />
+        <div className="flex items-center justify-center lg:col-start-2 lg:row-span-2 lg:row-start-1">
+          <div
+            className="w-[500px] h-[500px] rounded-full border-2  shadow-2xl"
+            style={{ backgroundColor: "rgb(211, 233, 122)" }}
+          >
+            <img
+              alt="hero img"
+              src="./assets/hero/Hero.png"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
       </div>
     </div>
