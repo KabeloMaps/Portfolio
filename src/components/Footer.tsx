@@ -24,12 +24,8 @@ const Footer = () => {
               resume
             </span>
           </p>
-
-          <p className="copyright text-white pt-24">
-            &copy; 2025 Kabelo Maponya
-          </p>
         </div>
-        <div className="social-icons  flex justify-end   text-white text-2xl  mb-5">
+        <div className="social-icons   flex justify-end   text-white text-2xl  mb-5">
           <a
             href="https://www.linkedin.com/in/kabelomaponya/"
             target="_blank"
@@ -47,6 +43,9 @@ const Footer = () => {
           </a>
         </div>
       </footer>
+      <div className=" text-center">
+        <p className="copyright text-white pt-24">&copy; 2025 Kabelo Maponya</p>
+      </div>
     </div>
   );
 };

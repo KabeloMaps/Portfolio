@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     img: "/assets/projects/E-commerce-Preview.jpg",
     description:
-      "Developed a responsive landing page for lead generation using HTML, CSS, and JavaScript. This project tests key front-end skills including menu toggling, event handling, and layout design. A practical challenge that mirrors common UI patterns on modern websites, ideal for strengthening both structural and interactive skills.",
+      "I built a responsive landing page and treated it as a pressure test for real-world UI work — menu toggles, event handling, and layouts that don’t collapse the moment the screen size changes. It forced me to clean up my JavaScript habits and think about structure before styling.",
     year: 2025,
     role: "Front-end Developer",
     technologies: ["HTML", "CSS", "JavaScript", "API Integration"],

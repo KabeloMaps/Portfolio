@@ -3,4 +3,3 @@
 This is a screenshot of the Home Screen
 
 ![alt text](<public/assets/hero/Home Screen.png>)
-![alt text](<public/assets/hero/Home Screen.png>)
