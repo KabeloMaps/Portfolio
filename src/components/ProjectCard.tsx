@@ -59,11 +59,17 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <hr />
 
           <div className="flex justify-start">
-            <button className="bg-blue-600 my-7 py-3.5 px-11 rounded-full">
+            <button
+              className="bg-blue-600 my-7 py-3.5 px-11 rounded-full"
+              onClick={() => window.open((project as any).demo, "_blank")}
+            >
               LIVE DEMO
             </button>
 
-            <button className="bg-blue-600 my-7 ml-8 py-3.5 px-11 rounded-full">
+            <button
+              className="bg-blue-600 my-7 ml-8 py-3.5 px-11 rounded-full"
+              onClick={() => window.open((project as any).github, "_blank")}
+            >
               SEE ON GITHUB
             </button>
           </div>

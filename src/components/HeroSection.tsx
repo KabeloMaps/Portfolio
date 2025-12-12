@@ -49,7 +49,7 @@ export default function HeroSection() {
               <p className="mt-6text-xl/8 text-[1.25rem] text-white">
                 <TextType
                   text={[
-                    "A Cape Town based software developer passionate about building accessible and user friendly websites... ",
+                    "A Cape Town based software developer with 2 years of experience and passionate about building accessible and user friendly websites... ",
                   ]}
                   typingSpeed={75}
                   pauseDuration={500}
@@ -57,7 +57,7 @@ export default function HeroSection() {
                   cursorCharacter="|"
                 />
               </p>
-              <div className=" flex items-center mt-10">
+              <div className=" flex   items-center mt-10">
                 <Button
                   className="flex px-5 items-center rounded-4xl bg-pretty py-4 text-base font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   style={{ backgroundColor: "rgb(211, 233, 122)" }}

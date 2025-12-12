@@ -25,8 +25,8 @@ export default function FeatureSection() {
   } = usePagination(projects, 4);
 
   return (
-    <div className="feature-section ">
-      <div className="Header-contianer ">
+    <div className="feature-section  ">
+      <div className="Header-contianer  ">
         <div className="flex cursor-default  lg:px-8">
           <div className="max-w-2xl flex justify-items-start flex-row lg:text-center flex-wrap mx-0">
             <h2 className="text-[3.4rem] font-family-primary text-white font-bold">

@@ -14,7 +14,7 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-black">
+    <div className="bg-black sticky top-0 z-50">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           aria-label="Global"

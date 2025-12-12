@@ -7,8 +7,9 @@ export const projects = [
     year: 2025,
     role: "Front-end Developer",
     technologies: ["HTML", "CSS", "JavaScript", "API Integration"],
-    demo: "https://kumkani-finance-demo2.netlify.app",
-    github: "https://github.com/KabeloMaps/Kumkani-Finance?tab=readme-ov-file",
+    demo: "https://product-display-page.netlify.app",
+
+    github: "https://github.com/KabeloMaps/E-commerce-Product-Page",
   },
   {
     id: 2,
@@ -18,8 +19,8 @@ export const projects = [
     year: 2025,
     role: "Front-end Developer",
     technologies: ["HTML", "SASS"],
-    demo: "https://kumkani-finance-demo2.netlify.app",
-    github: "https://github.com/KabeloMaps/Kumkani-Finance?tab=readme-ov-file",
+    demo: "https://huddle-welcome-page.netlify.app",
+    github: "https://github.com/KabeloMaps/Huddle-Landing-Page-",
   },
   {
     id: 3,
@@ -29,8 +30,7 @@ export const projects = [
     year: 2024,
     role: "Full Stack Developer",
     technologies: ["WordPress", "PHP", "PhpMyAdmin"],
-    demo: "https://kumkani-finance-demo2.netlify.app",
-    github: "https://github.com/KabeloMaps/Kumkani-Finance?tab=readme-ov-file",
+    demo: "https://beyouholisticwellness.co.za",
   },
   {
     id: 4,
@@ -40,8 +40,8 @@ export const projects = [
     year: 2026,
     role: "Front-end Developer",
     technologies: ["HTML", "CSS", "JavaScript"],
-    demo: "https://kumkani-finance-demo2.netlify.app",
-    github: "https://github.com/KabeloMaps/Kumkani-Finance?tab=readme-ov-file",
+    demo: "https://faq-card-accordion.netlify.app",
+    github: "https://github.com/KabeloMaps/FAQ-Accordion",
   },
   {
     id: 5,
@@ -51,8 +51,8 @@ export const projects = [
     year: 2025,
     role: "Front-end Developer",
     technologies: ["HTML", "SASS"],
-    demo: "https://kumkani-finance-demo2.netlify.app",
-    github: "https://github.com/KabeloMaps/Kumkani-Finance?tab=readme-ov-file",
+    demo: "https://product-preview-card-2025.netlify.app",
+    github: "https://github.com/KabeloMaps/Product-Preview-Card-",
   },
   {
     id: 6,
@@ -62,8 +62,8 @@ export const projects = [
     year: 2024,
     role: "Full-Stack Developer",
     technologies: ["C#", "HTML", "CSS", "JavaScript"],
-    demo: "https://kumkani-finance-demo2.netlify.app",
-    github: "https://github.com/KabeloMaps/Kumkani-Finance?tab=readme-ov-file",
+
+    github: "https://github.com/KabeloMaps/Contoso-University-Application.git",
   },
   {
     id: 7,
@@ -73,8 +73,8 @@ export const projects = [
     year: 2025,
     role: "Front-end Developer",
     technologies: ["HTML", "Tailwind"],
-    demo: "https://kumkani-finance-demo2.netlify.app",
-    github: "https://github.com/KabeloMaps/Kumkani-Finance?tab=readme-ov-file",
+    demo: "https://social-link-profile-solution.netlify.app",
+    github: "https://github.com/KabeloMaps/Social-Links-Profile",
   },
   {
     id: 8,
@@ -84,8 +84,8 @@ export const projects = [
     year: 2025,
     role: "Front-end Developer",
     technologies: ["HTML", "Tailwind"],
-    demo: "https://kumkani-finance-demo2.netlify.app",
-    github: "https://github.com/KabeloMaps/Kumkani-Finance?tab=readme-ov-file",
+    demo: "https://blog-preview-component-layout.netlify.app",
+    github: "https://github.com/KabeloMaps/Blog-Preview-Card",
   },
   {
     id: 9,
@@ -95,8 +95,8 @@ export const projects = [
     year: 2025,
     role: "Front-end Developer",
     technologies: ["HTML", "Tailwind"],
-    demo: "https://kumkani-finance-demo2.netlify.app",
-    github: "https://github.com/KabeloMaps/Kumkani-Finance?tab=readme-ov-file",
+    demo: "https://qr-code-card-layout.netlify.app",
+    github: "https://github.com/KabeloMaps/QR-Code",
   },
   {
     id: 10,
@@ -107,6 +107,6 @@ export const projects = [
     role: "Front-end Developer",
     technologies: ["HTML", "Tailwind"],
     demo: "https://kumkani-finance-demo2.netlify.app",
-    github: "https://github.com/KabeloMaps/Kumkani-Finance?tab=readme-ov-file",
+    github: "https://github.com/KabeloMaps/Recipe-Page",
   },
 ];
