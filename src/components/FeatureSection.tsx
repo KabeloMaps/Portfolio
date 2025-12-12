@@ -28,8 +28,8 @@ export default function FeatureSection() {
     <section id="projects">
       <div className="Header-contianer  ">
         <div className="flex cursor-default  lg:px-8">
-          <div className="max-w-2xl flex justify-items-start flex-row lg:text-center flex-wrap mx-0">
-            <h2 className="text-[3.4rem] font-family-primary text-white font-bold">
+          <div className="max-w-2xl flex justify-items-start flex-row  lg:text-center flex-wrap mx-0">
+            <h2 className="text-[3.4rem] font-family-primary  text-white font-bold">
               FEATURED PROJECTS
             </h2>
 

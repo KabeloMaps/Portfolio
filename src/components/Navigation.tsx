@@ -60,18 +60,18 @@ export default function Navigation() {
         >
           <div className="fixed inset-0 z-50" />
           <DialogPanel
-            className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 "
+            className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black   p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 "
             style={{
               boxShadow: "10px 0 10px rgba(0, 0, 0, 0.2)",
               borderRadius: "8px",
             }}
           >
-            <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="text-black text-2xl font-bold  ">Work</span>
+            <div className="flex flex-col items-start ">
+              <a href="#projects" className="-m-1.5 p-1.5 pb-9">
+                <span className="text-white text-2xl font-bold  ">Work</span>
               </a>
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="text-black text-2xl font-bold  ">About</span>
+              <a href="#about" className="-m-1.5 p-1.5 pb-52">
+                <span className="text-white text-2xl font-bold  ">About</span>
               </a>
 
               <button

@@ -14,7 +14,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="grid grid-cols-2 gap-7 ">
-      <div className="image-container w-full py-36 px-36 my-5 bg-neutral-600 rounded-3xl">
+      <div className="image-container w-full py-36 px-36 my-5 bg-neutral-600 rounded-3xl ">
         <div className="hover-3d">
           <figure className="rounded-2xl">
             <img src={project.img} alt="Project preview" />
