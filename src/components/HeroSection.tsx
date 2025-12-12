@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function HeroSection() {
   return (
     <div className=" relative  isolate overflow-hidden p-48 bg-black-400 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-      <div className="absolute inset-0 -z-10  overflow-hidden">
+      <div className="overlays absolute inset-0 -z-10  overflow-hidden">
         <svg
           aria-hidden="true"
           className="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-gray-200"
@@ -42,22 +42,27 @@ export default function HeroSection() {
       <div className="mx-auto grid  max-w-2xl grid-cols-1 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
         <div className="lg:col-span-2  lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className=" lg:max-w-lg">
+            <div className=" lg:max-w-lg  flex-col ">
               <h1 className="mt-20 mb-10 text-9xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
                 HI, I'M KABELO MAPONYA
               </h1>
-              <p className="mt-6text-xl/8 text-[1.25rem] text-white">
-                <TextType
-                  text={[
-                    "A Cape Town based software developer with 2 years of experience and passionate about building accessible and user friendly websites... ",
-                  ]}
-                  typingSpeed={75}
-                  pauseDuration={500}
-                  showCursor={true}
-                  cursorCharacter="|"
-                />
+              <p className="mt-6text-xl/8 min-h-4 overflow-scroll text-[1.25rem] text-white">
+                <div className="overflow-hidden h-20">
+                  <TextType
+                    text={[
+                      "A software developer based in Cape Town with 2 years of hands-on experience, building accessible and user-friendly websites.",
+                    ]}
+                    typingSpeed={75}
+                    pauseDuration={500}
+                    showCursor={true}
+                    cursorCharacter="|"
+                    cursorBlinkDuration={0.5}
+                    loop
+                  />
+                </div>
               </p>
-              <div className=" flex   items-center mt-10">
+
+              <div className=" flex items-center mt-10">
                 <Button
                   className="flex px-5 items-center rounded-4xl bg-pretty py-4 text-base font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   style={{ backgroundColor: "rgb(211, 233, 122)" }}
