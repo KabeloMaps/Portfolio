@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div>
+    <section id="about">
       <div className="text-white pb-10  grid grid-cols-2">
         <div className="px-4">
           <h3 className=" text-[2.5rem] font-bold font-family-third ">
@@ -21,6 +21,6 @@ export default function About() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

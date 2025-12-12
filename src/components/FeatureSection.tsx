@@ -25,7 +25,7 @@ export default function FeatureSection() {
   } = usePagination(projects, 4);
 
   return (
-    <div className="feature-section  ">
+    <section id="projects">
       <div className="Header-contianer  ">
         <div className="flex cursor-default  lg:px-8">
           <div className="max-w-2xl flex justify-items-start flex-row lg:text-center flex-wrap mx-0">
@@ -92,6 +92,6 @@ export default function FeatureSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

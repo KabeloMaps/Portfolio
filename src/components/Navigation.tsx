@@ -5,9 +5,8 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Work", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Work", href: "#projects" },
+  { name: "About", href: "#about" },
 ];
 
 export default function Navigation() {
@@ -74,9 +73,7 @@ export default function Navigation() {
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="text-black text-2xl font-bold  ">About</span>
               </a>
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="text-black text-2xl font-bold  ">Contact</span>
-              </a>
+
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
