@@ -37,7 +37,7 @@ export const projects = [
     img: "/assets/projects/FAQ-Accordion-Preview.jpg",
     description:
       "Effectively implemented an interactive FAQ accordion with smooth toggle animations, highlighting a strong grasp of core HTML, CSS, and JavaScript fundamentals through a widely-used front-end UI pattern.",
-    year: 2026,
+    year: 2025,
     role: "Front-end Developer",
     technologies: ["HTML", "CSS", "JavaScript"],
     demo: "https://faq-card-accordion.netlify.app",

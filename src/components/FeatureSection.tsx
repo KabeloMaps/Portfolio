@@ -26,14 +26,14 @@ export default function FeatureSection() {
 
   return (
     <section id="projects">
-      <div className="Header-contianer  ">
-        <div className="flex cursor-default  lg:px-8">
-          <div className="max-w-2xl flex justify-items-start flex-row lg:text-center flex-wrap mx-0">
-            <h2 className="text-[3.4rem] font-family-primary text-white font-bold">
+      <div className="Header-contianer">
+        <div className="flex cursor-default  ">
+          <div className="  flex flex-col px-7 lg:pt-12  justify-center  lg:text-start  mx-0">
+            <h2 className="text-[2.45rem] lg:text-[3rem] font-family-primary  text-white font-bold">
               FEATURED PROJECTS
             </h2>
 
-            <p className="my-2 flex  text-left font-family-third font-normal text-lg inset-0 text-white">
+            <p className="my-2 flex text-[1.45rem] lg:text-[1.75rem]  text-left font-family-third font-normal text-lg inset-0 text-white">
               Here are some of the selected projects that showcase my passion
               for
               <br />
@@ -42,8 +42,8 @@ export default function FeatureSection() {
           </div>
         </div>
       </div>
-      <div className="Main-container text-white  py-0 sm:py-32">
-        <div className=" lg:mx-8">
+      <div className="Main-container bg-cyan-800  text-white  py-0 sm:py-32">
+        <div className="grid  lg:mx-8">
           <div className="feature-container gap-28">
             {currentItems.map((proj) => (
               <ProjectCard key={proj.id} project={proj} />
