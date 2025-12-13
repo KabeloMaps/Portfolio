@@ -27,6 +27,7 @@
     "lucide-react": "^0.555.0",
     "ogl": "^1.0.11",
     "react": "^19.2.0",
+    "react-aria-components": "^1.13.0",
     "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",
     "tailwind-merge": "^3.4.0",
