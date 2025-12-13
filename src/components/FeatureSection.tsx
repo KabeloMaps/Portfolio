@@ -42,7 +42,7 @@ export default function FeatureSection() {
           </div>
         </div>
       </div>
-      <div className="Main-container bg-cyan-800  text-white  py-0 sm:py-32">
+      <div className="Main-container  text-white  py-0 sm:py-32">
         <div className="grid  lg:mx-8">
           <div className="feature-container gap-28">
             {currentItems.map((proj) => (
