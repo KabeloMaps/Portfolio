@@ -43,11 +43,11 @@ export default function HeroSection() {
         <div className="lg:col-span-2  lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className=" lg:max-w-lg  flex-col ">
-              <h1 className="mt-20 mb-10 text-9xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+              <h1 className="text-[2.45rem] sm:text-[3.5rem] mt-24 mb-10  font-semibold tracking-tight text-pretty text-white ">
                 HI, I'M KABELO MAPONYA
               </h1>
               <p className="mt-6text-xl/8 min-h-4 overflow-scroll text-[1.25rem] text-white">
-                <div className="overflow-hidden h-20">
+                <div className="overflow-hidden h-28">
                   <TextType
                     text={[
                       "A software developer based in Cape Town with 2 years of hands-on experience, building accessible and user-friendly websites.",
@@ -111,15 +111,13 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center lg:col-start-2 lg:row-span-2 lg:row-start-1">
-          <div
-            className="w-[500px] h-[500px] rounded-full border-2  shadow-2xl"
-            style={{ backgroundColor: "rgb(211, 233, 122)" }}
-          >
+        <div className="flex justify-center lg:col-start-2 lg:row-span-2 lg:row-start-1">
+          <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-140 md:h-140 md:mt-24 rounded-full bg-lime-200 border-2 shadow-2xl overflow-hidden">
             <img
-              alt="hero img"
-              src="./assets/hero/Hero.png"
-              className="w-full h-full object-cover"
+              src="/assets/hero/Hero.png"
+              alt="Portrait of Kabelo Maponya"
+              className="h-full w-full object-cover"
+              loading="lazy"
             />
           </div>
         </div>

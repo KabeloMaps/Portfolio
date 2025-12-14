@@ -29,11 +29,11 @@ export default function FeatureSection() {
       <div className="Header-contianer">
         <div className="flex cursor-default  ">
           <div className="  flex flex-col px-7 lg:pt-12  justify-center  lg:text-start  mx-0">
-            <h2 className="text-[2.45rem] lg:text-[3rem] font-family-primary  text-white font-bold">
+            <h2 className="text-[1.95rem] sm:text-[2.45rem] md:text-[3.45rem] lg:text-[4.45rem] font-family-primary  text-white font-bold">
               FEATURED PROJECTS
             </h2>
 
-            <p className="my-2 flex text-[1.45rem] lg:text-[1.75rem]  text-left font-family-third font-normal text-lg inset-0 text-white">
+            <p className="text-[1.35rem] sm:text-[1.65rem] my-2 flex  lg:text-[1.75rem]  text-left font-family-third font-normal text-lg inset-0 text-white">
               Here are some of the selected projects that showcase my passion
               for
               <br />
