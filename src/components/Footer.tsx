@@ -25,13 +25,16 @@ const Footer = () => {
             </span>
           </p>
         </div>
-        <div className="social-icons   flex justify-end   text-white text-2xl  mb-5">
+        <div className="social-icons flex justify-end   text-white text-2xl pt-6 mb-5">
           <a
             href="https://www.linkedin.com/in/kabelomaponya/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faLinkedin} className="text-8xl  " />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="text-[5rem] sm:text-[6rem] md:text-[7rem]  "
+            />
           </a>
 
           <a
@@ -39,7 +42,10 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} className="text-8xl " />
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="text-[5rem] sm:text-[6rem] md:text-[7rem] "
+            />
           </a>
         </div>
       </footer>
