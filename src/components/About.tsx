@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section id="about">
       <div className="text-white pb-10 grid  lg:grid-cols-2">
-        <div className="px-4">
+        <div className="px-4 pt-20 ">
           <h3 className=" text-[2.5rem] font-bold font-family-third pb-8">
             ABOUT ME
           </h3>

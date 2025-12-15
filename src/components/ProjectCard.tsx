@@ -28,7 +28,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       <div className="description-container content-center">
         <article>
-          <p className="text-[1.20rem] sm:text-[1.55rem] md:text-[1.65rem] lg:text-[1.70rem] xl:text-[1.75rem] font-family-third font-light">
+          <p className="text-[1.20rem] sm:text-[1.55rem] md:text-[1.65rem] lg:text-[1.70rem] xl: font-family-third font-light">
             {project.description}
           </p>
 
