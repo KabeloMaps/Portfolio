@@ -8,7 +8,7 @@ export default function About() {
           </h3>
         </div>
         <div className=" about-description px-5">
-          <h1 className="heading5 text-[1.45rem] pb-9 font-semibold font-family-third">
+          <h1 className="heading5 text-[1.45rem] pb-9 font-normal font-family-third">
             I enjoy turning designs into clean, maintainable interfaces. I work
             mainly with TypeScript, React, HTML, CSS, and Tailwind, and I’ve
             also spent time building projects with C# on the backend.
