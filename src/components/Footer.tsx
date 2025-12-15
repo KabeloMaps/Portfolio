@@ -6,9 +6,9 @@ const Footer = () => {
     <div className="px-4">
       <hr className="border-t-2 border-neutral-800" />
 
-      <footer className="grid grid-cols-2   ">
-        <div className="footer-description">
-          <h3 className="text-white text-[2.5rem] font-bold font-family-third ">
+      <footer className="grid grid-cols-1 sm:grid-cols-2   ">
+        <div className="footer-description pt-8">
+          <h3 className="text-white text-[1.85rem] sm:text-[2rem] md:text-[2.25rem] font-bold font-family-third ">
             Let's Connect
           </h3>
           <p className="text-white text-[1rem] font-family-third font-light">
@@ -25,7 +25,7 @@ const Footer = () => {
             </span>
           </p>
         </div>
-        <div className="social-icons flex justify-end   text-white text-2xl pt-6 mb-5">
+        <div className="social-icons flex md:justify-end  text-white text-2xl pt-8 mb-5">
           <a
             href="https://www.linkedin.com/in/kabelomaponya/"
             target="_blank"
