@@ -28,31 +28,31 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       <div className="description-container content-center">
         <article>
-          <p className="font-family-third text-[1.45rem]  font-light">
+          <p className="text-[1.20rem] sm:text-[1.55rem] md:text-[1.65rem] lg:text-[1.70rem] xl:text-[1.75rem] font-family-third font-light">
             {project.description}
           </p>
 
-          <h2 className="font-family-third font-semibold text-[1.25rem] pt-3.5 pb-3">
+          <h2 className="text-[1.25rem]  font-family-third font-semibold pt-3.5 pb-3">
             PROJECT INFO
           </h2>
           <hr />
 
-          <div className="my-1 mb-3 flex text-[1.25rem]">
+          <div className="text-[1.20rem] sm:text-[1.45rem]   my-1 mb-3 flex ">
             <p>Year</p>
             <p className="mx-auto mr-4">{project.year}</p>
           </div>
 
           <hr />
 
-          <div className="my-1 mb-3 flex text-[1.25rem]">
+          <div className="text-[1.20rem] sm:text-[1.45rem]  my-1 mb-3 flex">
             <p>Role</p>
             <p className="mx-auto mr-4">{project.role}</p>
           </div>
 
           <hr />
 
-          <div className="my-1 mb-3 flex text-[1.25rem]">
-            <p>Technologies</p>
+          <div className="text-[1.20rem] sm:text-[1.45rem] md:text-[1.65rem]  my-1 mb-3 flex">
+            <p className="pr-15">Technologies</p>
             <p className="mx-auto mr-4">{project.technologies.join(" | ")}</p>
           </div>
 
